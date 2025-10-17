@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gingham</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"/>
+
+
+  </head>
+  <body>
+    <!-- header 1 -->
+
+  <header>
+      <div class="container d-flex justify-content-between align-items-center py-2 header-1">
+        <div class="p-slider">
+          <p class="mb-0 mx-auto text-center flex-grow-1">
+            Free delivery & returns to store. T&Cs apply
+          </p>
+          <p class="mb-0 mx-auto text-center flex-grow-1">
+          Split the cost with pay in 3.  <a href="">Find out more</a>
+          </p>
+          <p class="mb-0 mx-auto text-center flex-grow-1">
+            Next day delivery available.  <a href="">T&Cs apply</a>
+          </p>
+        </div>
+
+        <div class="d-flex store">
+          <a href="#">Store Locator</a> | <a href="#" class="ms-2">Help</a>
+        </div>
+      </div>
+  </header>
+
+<!-- ================= HEADER 2 ================= -->
+<div class="header-2 py-2">
+  <div class="container d-flex justify-content-between align-items-center header-2-inner">
+
+    <!-- Left icons (mobile only) -->
+    <div class="header-left d-flex align-items-center d-lg-none">
+      <span class="me-3"><a href="#"><i class="fa fa-user-o"></i></a></span>
+      <span><a href="wishlist.html"><i class="fa fa-heart-o"></i></a></span>
+    </div>
+
+    <!-- Search (desktop only) -->
+    <div class="search d-none d-lg-block">
+      <form action="">
+        <input type="text" class="form-control ps-3" placeholder="Search for anything here...">
+        <i class="fa fa-search search-icon"></i>
+      </form>
+    </div>
+
+    <!-- Logo (always centered) -->
+    <div class="logo text-center">
+      <img src="images/logo/Gingham_White.png" alt="Logo">
+    </div>
+
+    <!-- Right icons -->
+    <div class="header-right d-flex align-items-center">
+      <!-- Desktop: user & wishlist -->
+      <div class="d-none d-lg-flex align-items-center me-3">
+        <span class="me-3"><a href="#"><i class="fa fa-user-o"></i></a></span>
+        <span><a href="wishlist.html"><i class="fa fa-heart-o"></i></a></span>
+      </div>
+
+      <!-- Mobile: search icon -->
+      <span class="d-lg-none me-3">
+        <i class="fa fa-search" data-bs-toggle="offcanvas" data-bs-target="#mobileSearch"></i>
+      </span>
+
+      <!-- Bag icon -->
+      <span class="me-3">
+        <button type="button" class="btn p-0" 
+              data-bs-container="body" 
+              data-bs-toggle="popover" 
+              data-bs-placement="bottom" 
+              data-bs-html="true"
+              data-bs-content='
+                <div class="cart-popover">
+                  <p class="mb-1"><strong>0 ITEMS IN BAG</strong></p>
+                  <p class="text-muted mb-2">Your shopping bag is empty</p>
+                  <div class="d-flex justify-content-between border-top pt-2 mb-2">
+                    <span><strong>Total</strong></span>
+                    <span>0.00</span>
+                  </div>
+                  <div class="d-flex gap-1">
+                    <a href="#" class="btn btn-outline-secondary btn-sm w-50">VIEW</a>
+                    <a href="#" class="btn btn-dark btn-sm w-50 pop-check">CHECKOUT</a>
+                  </div>
+                </div>'>
+          <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        </button>
+      </span>
+
+      <!-- Checkout button hidden on mobile -->
+      <div class="header-btn d-none d-lg-block">
+        <a href="#" class="btn btn-secondary btn-sm">CHECKOUT</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-4">
+
+            <!-- example dropdown -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link" href="#">Products</a>
+              <div class="mega-menu p-4 bg-light">
+                <div class="container-fluid">
+                  <div class="row">
+                    <!-- Left: Product Categories -->
+                     <div class="col-lg-1">
+                         <h6 class="menu-title">Product Layouts</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Product Default</a></li>
+                            <li><a href="#">Product Grid 1</a></li>
+                            <li><a href="#">Product Grid 2</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                          </ul>
+                     </div>
+
+                    <div class="col-lg-8">
+                      <div class="row">
+                        <!-- Repeat these blocks for different categories -->
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Layouts</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Product Default</a></li>
+                            <li><a href="#">Product Grid 1</a></li>
+                            <li><a href="#">Product Grid 2</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Layouts</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Product Default</a></li>
+                            <li><a href="#">Product Grid 1</a></li>
+                            <li><a href="#">Product Grid 2</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Right: Best Sellers -->
+                    <div class="col-lg-3">
+                      <h6 class="menu-title">Best Sellers</h6>
+                      <div class="best-sellers d-flex flex-wrap gap-2">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 1">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 2">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 3">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 4">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><span class="text-danger">SALE</span></a>
+            </li>
+           
+           
+            <!-- duplicate more nav-items as needed -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ================= SEARCH OFFCANVAS ================= -->
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="mobileSearch" style="height: 120px;">
+    <div class="offcanvas-body">
+      <form action="" class="d-flex">
+        <input type="text" class="form-control me-2" placeholder="Search for anything here...">
+        <button class="btn btn-dark">Search</button>
+      </form>
+    </div>
+  </div>
+
+
+    <!-- banner -->
+    <section id="banner" class="mb-4">
+      <video autoplay muted loop playsinline id="bannerVideo">
+        <source src="images/banner.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="container">
+        <div class="ban-con text-center">
+          <h5>MOST-WANTED</h5>
+          <h2>Womenswear</h2>
+          <p>FEATURING ROCELLE HUMES</p>
+        </div>
+      </div>
+    </section>
+
+
+  <section id="women men" class="mb-5">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Banner -->
+       <div class="col-lg-7 col-sm-12">
+        <div class="women_ban" style="position: relative;">
+            <img src="images/banner/women_ban.jpg" alt="Women's Banner" style="width:100%;">
+            <div class="women_txt">
+              <h2>Women</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="col-lg-5 women_slider">
+          <div class="women-img offer-slider"> 
+            <div class="wom">
+              <p>Women's Waistcoats</p>
+              <img src="images/women/data.jpg" alt="Offer 1">
+            </div>
+            <div class="wom">
+              <p>Women's Jackets</p>
+              <img src="images/women/data2.jpg" alt="Offer 2">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Men Section -->
+  <section id="men" class="mb-5">
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <!-- Slider -->
+        <div class="col-lg-5 col-md-12 women_slider">
+          <div class="women-img offer-slider"> 
+            <div class="wom">
+              <img src="images/women/data.jpg" alt="Offer 1">
+              <p>Men's Waistcoats</p>
+            </div>
+            <div class="wom">
+              <img src="images/women/data2.jpg" alt="Offer 2">
+              <p>Men's Jackets</p>
+            </div>
+          </div>
+        </div>
+        <!-- Banner -->
+        <div class="col-lg-7 col-md-12">
+          <div class="women_ban">
+            <div class="women_txt">
+              <h2>Men</h2>
+            </div>
+            <img src="images/banner/women_ban.jpg" alt="Men's Banner">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- partner -->
+  <section id="brands">
+    <div class="container-fluid">
+      <div class="brand-slider">
+        <div class="brand-track">
+          <!-- Repeat brand logos twice for smooth looping -->
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/1.jpg" alt="Brand 1"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/2.jpg" alt="Brand 2"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/3.jpg" alt="Brand 3"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/4.jpg" alt="Brand 4"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/5.jpg" alt="Brand 5"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/6.jpg" alt="Brand 6"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/7.jpg" alt="Brand 7"></a>
+          </div>
+
+          <!-- repeat same logos for infinite loop -->
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/8.jpg" alt="Brand 8"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/9.jpg" alt="Brand 9"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/1.jpg" alt="Brand 1"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/2.jpg" alt="Brand 2"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/3.jpg" alt="Brand 3"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/4.jpg" alt="Brand 4"></a>
+          </div>
+          <div class="brand-slide">
+            <a href="#"><img src="images/company/5.jpg" alt="Brand 5"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- partner -->
+
+    <!-- Men Section -->
+        <section id="women men" class="mb-5">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <!-- Banner -->
+            <div class="col-lg-7 col-sm-12">
+              <div class="women_ban" style="position: relative;">
+                  <img src="images/banner/women_ban.jpg" alt="Women's Banner" style="width:100%;">
+                  <div class="women_txt">
+                    <h2>Women</h2>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider -->
+              <div class="col-lg-5 women_slider">
+                <div class="women-img offer-slider"> 
+                  <div class="wom">
+                    <p>Women's Waistcoats</p>
+                    <img src="images/women/data.jpg" alt="Offer 1">
+                  </div>
+                  <div class="wom">
+                    <p>Women's Jackets</p>
+                    <img src="images/women/data2.jpg" alt="Offer 2">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="men" class="mb-5">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <!-- Slider -->
+              <div class="col-lg-5 col-md-12 women_slider">
+                <div class="women-img offer-slider"> 
+                  <div class="wom">
+                    <img src="images/women/data.jpg" alt="Offer 1">
+                    <p>Men's Waistcoats</p>
+                  </div>
+                  <div class="wom">
+                    <img src="images/women/data2.jpg" alt="Offer 2">
+                    <p>Men's Jackets</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Banner -->
+              <div class="col-lg-7 col-md-12">
+                <div class="women_ban">
+                  <div class="women_txt">
+                    <h2>Home</h2>
+                  </div>
+                  <img src="images/banner/women_ban.jpg" alt="Men's Banner">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+    <!-- feature -->
+    <section id="feature" class="py-5">
+      <div class="container-fluide">
+        <div class="feat-head text-center mb-4">
+          <h4>Feature Brand</h4>
+        </div>
+        <div class="feat-img d-flex flex-wrap justify-content-center align-items-center">
+          <div class="feat-item"><img src="images/feature/1.jpg" alt="Brand 1"></div>
+          <div class="feat-item"><img src="images/feature/2.jpg" alt="Brand 2"></div>
+          <div class="feat-item"><img src="images/feature/3.jpg" alt="Brand 3"></div>
+          <div class="feat-item"><img src="images/feature/4.jpg" alt="Brand 4"></div>
+          <div class="feat-item"><img src="images/feature/5.jpg" alt="Brand 5"></div>
+          <div class="feat-item"><img src="images/feature/6.jpg" alt="Brand 6"></div>
+          <div class="feat-item"><img src="images/feature/7.jpg" alt="Brand 7"></div>
+          <div class="feat-item"><img src="images/feature/8.jpg" alt="Brand 8"></div>
+        </div>
+      </div>
+    </section>
+    <!-- feature -->
+
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url('images/loyalty/coffee.jpg')"></div>
+            <div class="card__content">
+              <p class="card__category">Travel</p>
+              <h3 class="card__heading">Beautiful Landscapes</h3>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url('images/loyalty/hotel (2).jpg')"></div>
+            <div class="card__content">
+              <p class="card__category">Hotel</p>
+              <h3 class="card__heading">Luxury Stay Experience</h3>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <a class="card" href="#">
+            <div class="card__background" style="background-image: url('images/loyalty/loyalty.png')"></div>
+            <div class="card__content">
+              <p class="card__category">Rewards</p>
+              <h3 class="card__heading">Loyalty Benefits</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+        <div class="news-icon"><img src="images/newsletter-icon.svg" alt="Newsletter Icon" class="icon"></div>
+        <h2>Be In The Know</h2>
+        <p>Keep up to date with the latest Next news, including exclusive offers and not to be missed sale and store events.</p>
+        <p>Enter your email address below to opt in to email marketing.</p>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <button class="subscribe-btn">SUBSCRIBE</button>
+
+        <p class="terms">
+            See Next's full <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a> to find out more.
+        </p>
+    </div>
+  </section>
+  <!-- Newsletter -->
+
+  <!-- recent -->
+  <section id="recent" class="py-5">
+      <div class="container-fluide">
+        <div class="feat-head text-center mb-4">
+          <h4>Recently Viewed</h4>
+        </div>
+        <div class="feat-img d-flex flex-wrap justify-content-center align-items-center">
+          <div class="feat-item"><img src="images/feature/1.jpg" alt="Brand 1"></div>
+          <div class="feat-item"><img src="images/feature/2.jpg" alt="Brand 2"></div>
+          <div class="feat-item"><img src="images/feature/3.jpg" alt="Brand 3"></div>
+        </div>
+      </div>
+    </section>
+  <!-- recent -->
+
+
+  <!-- social icons -->
+  <!-- <section id="icon">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 col-sm-12">
+                  <div class="icons">
+                      <ul class="social-icons">
+                          <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                          <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="#" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section> -->
+
+
+  <!-- social icons -->
+
+
+    <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+         <div class="col-lg-12 col-sm-12">
+                  <div class="icons">
+                      <ul class="social-icons">
+                          <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                          <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="#" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+        <div class="col-lg-3 footer_header d-flex justify-content-evenly">
+          <div class="header_icon">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+          </div>
+          <div class="header_text">
+            <h6><a href="">My Account</a></h6>
+            <a href="">Sign-in to your account</a>
+          </div>
+        </div>
+        <div class="col-lg-3 footer_header d-flex justify-content-evenly">
+          <div class="header_icon">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </div>
+          <div class="header_text">
+            <h6><a href="">Change Country</a></h6>
+            <a href="">Choose your shopping location</a>
+          </div>
+        </div>
+        <div class="col-lg-3 footer_header d-flex justify-content-evenly">
+          <div class="header_icon">
+            <i class="fa fa-hdd-o" aria-hidden="true"></i>
+          </div>
+          <div class="header_text">
+            <h6><a href="">Store Location</a></h6>
+            <a href="">Find your nearest store</a>
+          </div>
+        </div>
+        <div class="col-lg-3 footer_header d-flex justify-content-evenly">
+          <div class="header_icon">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+          </div>
+          <div class="header_text">
+            <h6><a href="">Start a Chat</a></h6>
+            <a href="">For general enquiries</a>
+          </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer-list">
+              <ul><span>Help</span>
+                <li><a href="">Frequently Asked Questions</a></li>
+                <li><a href="">Delivery Information</a></li>
+                <li><a href="">Arrange A Return</a></li>
+                <li><a href="">Product Recall</a></li>
+                <li><a href="">Customer Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Accessible Site</a></li>
+                <li><a href="">Website Accessibility Policy</a></li>
+                <li><a href="">Website In Our Stores</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">Complaints Process</a></li>
+                <li><a href="">Furniture Spare Parts</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer-list">
+              <ul><span>Shopping With Us</span>
+                <li><a href="">Next Unlimited</a></li>
+                <li><a href="">Next Credit</a></li>
+                <li><a href="">eGift Cards</a></li>
+                <li><a href="">Gift cards</a></li>
+                <li><a href="">Gift Experience</a></li>
+                <li><a href="">Flowers,Plants & Wine</a></li>
+                <li><a href="">Privacy & Cookie Policy</a></li>
+                <li><a href="">Terms & Condition</a></li>
+                <li><a href="">Manually Manage Cookies</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer-list">
+              <ul><span>Departments</span>
+                <li><a href="">Women</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Boys</a></li>
+                <li><a href="">Girls</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Beauty</a></li>
+                <li><a href="">Brands</a></li>
+                <li><a href="">Baby</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Gifts</a></li>
+                <li><a href="">Clearance</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer-list">
+              <ul><span>More From Gingham</span>
+                <li><a href="">Gingham App</a></li>
+                <li><a href="">The Company</a></li>
+                <li><a href="">Media & Press</a></li>
+                <li><a href="">Careers@Gingham</a></li>
+                <li><a href="">View Our Modern Slavery Statement</a></li>
+                <li><a href="">Gender Pay Report</a></li>
+                <li><a href="">Corporate Responsible Report</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+  <!-- back to top -->
+   <button id="backToTop" title="Go to top"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+  <!-- back to top -->
+
+  <!-- copyright -->
+   <section id="copy py-2">
+     <div class="copy-con text-center">
+      <p>© 2025 Next Retail Ltd. All rights reserved.</p>
+     </div>
+   </section>
+  <!-- copyright -->
+
+
+<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+      // Show button when user scrolls down 200px
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        const btn = document.getElementById("backToTop");
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          btn.style.display = "block";
+        } else {
+          btn.style.display = "none";
+        }
+      }
+
+      // Scroll to top when button clicked
+      document.getElementById("backToTop").addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gingham</title>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+
+  </head>
+  <body>
+    <!-- header 1 -->
+      <header>
+      <div class="container d-flex justify-content-between align-items-center py-2">
+        <div class="p-slider">
+          <p class="mb-0 mx-auto text-center flex-grow-1">
+            Free delivery & returns to store. T&Cs apply
+          </p>
+          <p class="mb-0 mx-auto text-center flex-grow-1">
+           Split the cost with pay in 3.  <a href="">Find out more</a>
+          </p>
+          <p class="mb-0 mx-auto text-center flex-grow-1">
+            Next day delivery available.  <a href="">T&Cs apply</a>
+          </p>
+        </div>
+
+        <div class="d-flex">
+          <a href="#">Store Locator</a> | <a href="#" class="ms-2">Help</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- header 2 -->
+    <div class="header-2 py-2">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="search">
+          <form action="">
+            <input type="text" class="form-control ps-3" placeholder="Search for anything here...">
+            <i class="fa fa-search search-icon"></i>
+          </form>
+        </div>
+        <div class="logo text-center">
+          <img src="images/logo/Gingham_White.png" alt="Logo">
+        </div>
+        <div class="header-right d-flex align-items-center">
+          <span><a href="wishlist.html"><i class="fa fa-heart" aria-hidden="true"></i></a></span>
+          <span class="mx-4"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+          <!-- <span class="me-4"><i class="fa fa-shopping-bag" aria-hidden="true"></i></span> -->
+           <span class="me-4">
+              <button type="button" class="btn" 
+                    data-bs-container="body" 
+                    data-bs-toggle="popover" 
+                    data-bs-placement="bottom" 
+                    data-bs-html="true"
+                    data-bs-content='
+                      <div class="cart-popover">
+                        <p class="mb-1"><strong>0 ITEMS IN BAG</strong></p>
+                        <p class="text-muted mb-2">Your shopping bag is empty</p>
+                        <div class="d-flex justify-content-between border-top pt-2 mb-2">
+                          <span><strong>Total</strong></span>
+                          <span>0.00</span>
+                        </div>
+                        <div class="d-flex gap-1">
+                          <a href="#" class="btn btn-outline-secondary btn-sm w-50">VIEW</a>
+                          <a href="#" class="btn btn-dark btn-sm w-50 pop-check">CHECKOUT</a>
+                        </div>
+                      </div>'>
+              <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+            </button>
+           </span>
+          <div class="header-btn">
+            <a href="#" class="btn btn-secondary btn-sm">CHECKOUT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-4">
+
+            <!-- example dropdown -->
+            <li class="nav-item dropdown position-static">
+              <a class="nav-link" href="#">Products</a>
+              <div class="mega-menu p-4 bg-light">
+                <div class="container">
+                  <div class="row">
+                    <!-- Left: Product Categories -->
+                    <div class="col-lg-10">
+                      <div class="row">
+                        <!-- Repeat these blocks for different categories -->
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Layouts</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Product Default</a></li>
+                            <li><a href="#">Product Grid 1</a></li>
+                            <li><a href="#">Product Grid 2</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Layouts</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Product Default</a></li>
+                            <li><a href="#">Product Grid 1</a></li>
+                            <li><a href="#">Product Grid 2</a></li>
+                            <li><a href="#">Product Stacked</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                          <h6 class="menu-title">Product Details</h6>
+                          <ul class="list-unstyled menu-list">
+                            <li><a href="#">Inner Zoom</a></li>
+                            <li><a href="#">Zoom Magnifier</a></li>
+                            <li><a href="#">No Zoom</a></li>
+                            <li><a href="#">Video</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Right: Best Sellers -->
+                    <div class="col-lg-2">
+                      <h6 class="menu-title">Best Sellers</h6>
+                      <div class="best-sellers d-flex gap-2">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 1">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 2">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 3">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 4">
+                        <img src="images/products/black-19.jpg" alt="Best Seller 4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#"><span class="text-danger">SALE</span></a>
+            </li>
+           
+           
+            <!-- duplicate more nav-items as needed -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- content -->
+     <section id="product-filter">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="filter-header text-center justify-content-between animate__fadeInUp" data-wow-delay="0.1s">
+                        <h4>MENS SMART SHOP <span>(209)</span></h4>
+
+                        <div class="card">
+                         <div class="card-body filter-card">
+                            <p class="collapsible-text">
+                              At Next, we’re here to fill your wardrobe with the latest trends and styles to take you through Autumn and Winter.Layer up with our lighterweight options such as our Jackets & Shackets or browse our Coats to keep
+                              <span class="more-text">
+                                your morning commute warm. 
+                                Find your go-to denim with our extensive range of denim jeans. Whether your work is strictly formal or a little more laidback, 
+                                we have sharp suits, tailored trousers, crisp shirts and waistcoats that can also double for your occasionwear this party season. 
+                                Find your feet with a pair of timeless Oxfords or Derby shoes and don’t forget to accessorise with the latest bags and watches. 
+                                Take care of your night time routine with comfy pyjamas and cosy slippers.
+                              </span>
+                              <span class="read-more-btn"> Read More</span>
+                            </p>
+                            <div class="category-row">
+                                <div class="category-item">
+                                    <img src="images/products/New-In.webp" alt="New In">
+                                    <span>New In</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Jackets">
+                                    <span>Jackets</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Jumpers">
+                                    <span>Jumpers</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Cardigans">
+                                    <span>Cardigans</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Hoodies">
+                                    <span>Hoodies</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Sweatshirts">
+                                    <span>Sweatshirts</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Shirts">
+                                    <span>Shirts</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="T-shirts">
+                                    <span>T-shirts</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Poloshirts">
+                                    <span>Poloshirts</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Trousers">
+                                    <span>Trousers</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Jeans">
+                                    <span>Jeans</span>
+                                </div>
+                                <div class="category-item">
+                                    <img src="images/products/next1.webp" alt="Boots">
+                                    <span>Boots</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        </div>
+                    </div>
+
+                   <div class="product-filter d-flex flex-wrap align-items-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                New In (32)
+                            </label>
+                        </div>
+
+                        <div class="select-wrapper mt-2">
+                            <select class="form-select" aria-label="example">
+                                <option selected>Category</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="select-wrapper mt-2">
+                            <select class="form-select" aria-label="example">
+                                <option selected>Brand</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="select-wrapper mt-2">
+                            <select class="form-select" aria-label="example">
+                                <option selected>Color</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="select-wrapper mt-2">
+                            <select class="form-select" aria-label="example">
+                                <option selected>Size</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="select-wrapper mt-2">
+                            <select class="form-select" aria-label="example">
+                                <option selected>Fit</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <!-- Toggle button -->
+                        <button class="btn mt-2 toggle-btn" 
+                                type="button" 
+                                data-bs-toggle="collapse" 
+                                data-bs-target="#collapseFilters" 
+                                aria-expanded="false" 
+                                aria-controls="collapseFilters">
+                            More Filters <img src="images/filter.svg" alt="">
+                        </button>
+
+                        <!-- Sort select -->
+                        <div class="select-wrapper mt-2 sort-select">
+                            <select class="form-select" aria-label="example">
+                                <option selected>Sort</option>
+                                <option value="1">Price Low to High</option>
+                                <option value="2">Price High to Low</option>
+                                <option value="3">Newest</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <!-- Collapsible area OUTSIDE the main row -->
+                    <div class="collapse mt-2" id="collapseFilters">
+                          <div class="product-filter d-flex flex-wrap align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                New In (32)
+                                </label>
+                            </div>
+
+                            <select class="form-select mt-2" aria-label="example">
+                                <option selected>Category</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            <select class="form-select mt-2" aria-label="example">
+                                <option selected>Brand</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            <select class="form-select mt-2" aria-label="example">
+                                <option selected>Color</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            <select class="form-select mt-2" aria-label="example">
+                                <option selected>Size</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            <select class="form-select mt-2" aria-label="example">
+                                <option selected>Fit</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            
+                            <!-- Sort stays on the same row -->
+                            <select class="form-select mt-2 sort-select" aria-label="example">
+                                <option selected>Sort</option>
+                                <option value="1">Price Low to High</option>
+                                <option value="2">Price High to Low</option>
+                                <option value="3">Newest</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class="d-flex d-md-none mb-filter align-items-center mb-2">
+                        
+                        <!-- Sort Dropdown -->
+                        <select class="form-select w-50">
+                            <option selected>Sort</option>
+                            <option value="1">Most Relevant</option>
+                            <option value="2">Most Popular</option>
+                            <option value="3">Alphabetical</option>
+                            <option value="4">Price Low to High</option>
+                            <option value="5">Price High to Low</option>
+                        </select>
+
+                        <!-- Offcanvas Filter Button -->
+                        <button class="btn mb-filter-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileFilterOffcanvas">
+                            Filter <img src="images/filter.svg" alt="">
+                        </button>
+
+                    </div>
+
+                    <!-- Offcanvas for Mobile Filters -->
+                  <div class="offcanvas filter-can offcanvas-end" tabindex="-1" id="mobileFilterOffcanvas" aria-controls="offcanvasRight">
+                      <div class="offcanvas-header">
+                          <h5 class="offcanvas-title">Filters</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                      </div>
+
+                      <div class="offcanvas-body filter-container">
+
+                          <div class="filter-left">
+                              <div class="filter-title active">Category</div>
+                              <div class="filter-title">Size</div>
+                              <div class="filter-title">Brand</div>
+                              <div class="filter-title">Colour</div>
+                              <div class="filter-title">Style</div>
+                              <div class="filter-title">Material</div>
+                              <div class="filter-title">Use</div>
+                              <div class="filter-title">Fit</div>
+                              <div class="filter-title">Pattern</div>
+                              <div class="filter-title">Length</div>
+                          </div>
+
+                          <div class="filter-right">
+                              <div class="filter-options">
+                                  <div class="option-item">T-Shirts (3678)</div>
+                                  <div class="option-item">Shirts (2645)</div>
+                                  <div class="option-item">Jackets (2088)</div>
+                                  <div class="option-item">Polo Shirts (1649)</div>
+                                  <div class="option-item">Jumpers (1575)</div>
+                                  <div class="option-item">Trousers (1399)</div>
+                                  <div class="option-item">Socks (988)</div>
+                              </div>
+
+                              <div class="filter-options">
+                                  <div class="option-item">XS</div>
+                                  <div class="option-item">S</div>
+                                  <div class="option-item">M</div>
+                                  <div class="option-item">L</div>
+                                  <div class="option-item">XL</div>
+                                  <div class="option-item">XXL</div>
+                              </div>
+
+                              <div class="filter-options">
+                                  <div class="option-item">Gingham</div>
+                                  <div class="option-item">Levis</div>
+                                  <div class="option-item">Nike</div>
+                                  <div class="option-item">Adidas</div>
+                                  <div class="option-item">Puma</div>
+                              </div>
+
+                              <div class="filter-options">
+                                  <div class="option-item">Black</div>
+                                  <div class="option-item">Blue</div>
+                                  <div class="option-item">White</div>
+                                  <div class="option-item">Grey</div>
+                                  <div class="option-item">Green</div>
+                              </div>
+
+                              <div class="filter-options">
+                                  <div class="option-item">Casual</div>
+                                  <div class="option-item">Formal</div>
+                                  <div class="option-item">Sports</div>
+                                  <div class="option-item">Party</div>
+                              </div>
+                          </div>
+
+
+                        </div>
+                        <button class="btn btn-primary btn-fit w-100 mt-3" data-bs-dismiss="offcanvas">Apply Filters</button>
+                  </div>
+
+
+
+                    
+
+
+                </div>
+
+                
+                  <!-- products -->
+                     <div class="col-lg-3 col-md-4 col-sm-6 mt-3 wow animate__fadeInUp" data-wow-delay="0.1s">
+                       <div class="product-container">
+                          <div class="product-image-container">
+                            <a href="">
+                              <img src="images/products/black-22.jpg" alt="Leopard Print Jeans" class="product-image" width="100%">
+                            </a>
+                            
+                            <!-- Tags -->
+                            <div class="tag new-tag">NEW IN</div>
+                            <div class="tag brand-tag"><a href="">Gingham</a></div>
+                            
+                            <!-- Heart Icon -->
+                            <a href=""><i class="fa fa-heart-o heart-icon" aria-hidden="true" onclick="toggleHeart(this)"></i></a>
+                          </div>
+
+                          <!-- Product title & price -->
+                          <div class="product-title">
+                            <h6><a href="">Leopard Print Straight Leg 100% Cotton Jeans</a></h6>
+                          </div>
+                          <div class="product-price">$45</div>
+
+                          <!-- Color options -->
+                          <div class="color-options">
+                            <div class="color-option" style="background-color: black;" onmouseover="previewImage(this, 'images/products/next1.webp')" onmouseout="resetImage(this)"></div>
+                            <div class="color-option" style="background-color: blue;" onmouseover="previewImage(this, 'images/products/next2.webp')" onmouseout="resetImage(this)"></div>
+                            <div class="color-option" style="background-color: red;" onmouseover="previewImage(this, 'images/products/next3.webp')" onmouseout="resetImage(this)"></div>
+                          </div>
+                        </div>
+
+
+                     </div>
+                     <div class="col-lg-3 col-md-4 col-sm-6 mt-3 wow animate__fadeInUp" data-wow-delay="0.1s">
+                       <div class="product-container">
+                          <div class="product-image-container">
+                            <a href="">
+                              <img src="images/products/black-22.jpg" alt="Leopard Print Jeans" class="product-image" width="100%">
+                            </a>
+                            
+                            <!-- Tags -->
+                            <div class="tag new-tag">NEW IN</div>
+                            <div class="tag brand-tag"><a href="">Gingham</a></div>
+                            
+                            <!-- Heart Icon -->
+                            <a href=""><i class="fa fa-heart-o heart-icon" aria-hidden="true" onclick="toggleHeart(this)"></i></a>
+                          </div>
+
+                          <!-- Product title & price -->
+                          <div class="product-title">
+                            <h6><a href="">Leopard Print Straight Leg 100% Cotton Jeans</a></h6>
+                          </div>
+                          <div class="product-price">$45</div>
+
+                          <!-- Color options -->
+                          <div class="color-options">
+                            <div class="color-option" style="background-color: black;" onmouseover="previewImage(this, 'images/products/next1.webp')" onmouseout="resetImage(this)"></div>
+                            <div class="color-option" style="background-color: blue;" onmouseover="previewImage(this, 'images/products/next2.webp')" onmouseout="resetImage(this)"></div>
+                            <div class="color-option" style="background-color: red;" onmouseover="previewImage(this, 'images/products/next3.webp')" onmouseout="resetImage(this)"></div>
+                          </div>
+                        </div>
+
+
+                     </div>
+                     
+                    
+                  <!-- products -->
+
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- social icons -->
+    <section id="icon">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="icons">
+                        <ul class="social-icons">
+                            <li><a href="#" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- social icons -->
+
+
+    <!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 footer_header d-flex justify-content-evenly">
+          <div class="header_icon">
+            <i class="fa fa-user-o" aria-hidden="true"></i>
+          </div>
+          <div class="header_text">
+            <h6><a href="">My Account</a></h6>
+            <a href="">Sign-in to your account</a>
+          </div>
+        </div>
+        <div class="col-lg-3 footer_header d-flex justify-content-evenly">
+          <div class="header_icon">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+          </div>
+          <div class="header_text">
+            <h6><a href="">Change Country</a></h6>
+            <a href="">Choose your shopping location</a>
+          </div>
+        </div>
+        <div class="col-lg-3 footer_header d-flex justify-content-evenly">
+          <div class="header_icon">
+            <i class="fa fa-hdd-o" aria-hidden="true"></i>
+          </div>
+          <div class="header_text">
+            <h6><a href="">Store Location</a></h6>
+            <a href="">Find your nearest store</a>
+          </div>
+        </div>
+        <div class="col-lg-3 footer_header d-flex justify-content-evenly">
+          <div class="header_icon">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+          </div>
+          <div class="header_text">
+            <h6><a href="">Start a Chat</a></h6>
+            <a href="">For general enquiries</a>
+          </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer-list">
+              <ul><span>Help</span>
+                <li><a href="">Frequently Asked Questions</a></li>
+                <li><a href="">Delivery Information</a></li>
+                <li><a href="">Arrange A Return</a></li>
+                <li><a href="">Product Recall</a></li>
+                <li><a href="">Customer Services</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Accessible Site</a></li>
+                <li><a href="">Website Accessibility Policy</a></li>
+                <li><a href="">Website In Our Stores</a></li>
+                <li><a href="">Site Map</a></li>
+                <li><a href="">Complaints Process</a></li>
+                <li><a href="">Furniture Spare Parts</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer-list">
+              <ul><span>Shopping With Us</span>
+                <li><a href="">Next Unlimited</a></li>
+                <li><a href="">Next Credit</a></li>
+                <li><a href="">eGift Cards</a></li>
+                <li><a href="">Gift cards</a></li>
+                <li><a href="">Gift Experience</a></li>
+                <li><a href="">Flowers,Plants & Wine</a></li>
+                <li><a href="">Privacy & Cookie Policy</a></li>
+                <li><a href="">Terms & Condition</a></li>
+                <li><a href="">Manually Manage Cookies</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer-list">
+              <ul><span>Departments</span>
+                <li><a href="">Women</a></li>
+                <li><a href="">Men</a></li>
+                <li><a href="">Boys</a></li>
+                <li><a href="">Girls</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Beauty</a></li>
+                <li><a href="">Brands</a></li>
+                <li><a href="">Baby</a></li>
+                <li><a href="">Sports</a></li>
+                <li><a href="">Gifts</a></li>
+                <li><a href="">Clearance</a></li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="footer-list">
+              <ul><span>More From Gingham</span>
+                <li><a href="">Gingham App</a></li>
+                <li><a href="">The Company</a></li>
+                <li><a href="">Media & Press</a></li>
+                <li><a href="">Careers@Gingham</a></li>
+                <li><a href="">View Our Modern Slavery Statement</a></li>
+                <li><a href="">Gender Pay Report</a></li>
+                <li><a href="">Corporate Responsible Report</a></li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+  <!-- copyright -->
+   <section id="copy py-2">
+     <div class="copy-con text-center">
+      <p>© 2025 Next Retail Ltd. All rights reserved.</p>
+     </div>
+   </section>
+  <!-- copyright -->
+
+
+<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+   <script>
+    // Enable all popovers
+      document.addEventListener("DOMContentLoaded", function () {
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+      })
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+        const toggleBtn = document.querySelector(".toggle-btn");
+        const collapse = document.getElementById("collapseFilters");
+
+        collapse.addEventListener("shown.bs.collapse", function () {
+            toggleBtn.textContent = "Less Filters";
+        });
+
+        collapse.addEventListener("hidden.bs.collapse", function () {
+            toggleBtn.textContent = "More Filters";
+        });
+        });
+
+
+        
+   </script>
+
+
+  </body>
+</html>
